@@ -179,7 +179,7 @@ header .shopping span {
     color: var(--whitish);
 }
 
-.listCard lis {
+.listCard li {
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
     color: var(--white);

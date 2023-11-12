@@ -18,7 +18,7 @@ let products = [
     {
         "id": 1,
         "name": "PRODUCT 1",
-        "image": "1.PNG",
+        "image": "1.png",
         "price": 2000
     },
     {
@@ -94,13 +94,13 @@ const reloadCard = () => {
             let newDiv = document.createElement("li");
             newDiv.innerHTML = `
                 <div><img src = "img/${value.image}"></div>
-                <div class = "cardTitle">${value.image}</div>
-                <div class = "carPrice">${value.price.toLocaleString()}</div>
+                <div class = "cardTitle">${value.name}</div>
+                <div class = "cardPrice">${value.price.toLocaleString()}</div>
 
                 <div>
-                    <button style = "background-color:"#56bad" class = "cardButton" onclice = "changeQuantity(${key}, ${value.quantity - 1})">-</button>
-                    < class = "count">${value.quantity}</div>
-                    <button style = "background-color:"#56bad" class = "cardButton" onclice = "changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                    <button style = "background-color:#560bad;" class = "cardButton" onclick = "changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                    <div class = "count">${value.quantity}</div>
+                    <button style = "background-color:#560bad;" class = "cardButton" onclick = "changeQuantity(${key}, ${value.quantity + 1})">+</button>
                 </div>
             `
             listCard.appendChild(newDiv);
